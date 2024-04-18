@@ -1,0 +1,12 @@
+<div style="width: 100%;">
+    <input type="file" (change)="handleFileInput($event)">
+  </div>
+  
+  <div *ngIf="pdfSrc">
+    <ngx-extended-pdf-viewer 
+        [src]="pdfSrc" 
+        [height]="'80vh'"
+        style="border: 1px solid black;">
+    </ngx-extended-pdf-viewer>
+  </div>
+  
